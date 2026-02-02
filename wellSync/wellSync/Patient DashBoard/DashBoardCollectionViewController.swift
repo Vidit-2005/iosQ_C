@@ -198,7 +198,7 @@ class DashboardCollectionViewController: UICollectionViewController, UICollectio
     // what to done after mood view is tapped
     @objc func moodTapped(_ sender: UITapGestureRecognizer) {
         guard let selectedView = sender.view else { return }
-
+        let selectedIndex = selectedView.tag
         // scale animation
         UIView.animate(withDuration: 0.15,
                        delay: 0,
@@ -209,22 +209,27 @@ class DashboardCollectionViewController: UICollectionViewController, UICollectio
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            self.performSegue(withIdentifier: "moodLog", sender: selectedView.backgroundColor)
+            self.performSegue(
+                        withIdentifier: "moodLog",
+                        sender: (selectedIndex, selectedView.backgroundColor))
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "moodLog",
            let nav = segue.destination as? UINavigationController,
-           let vc = nav.viewControllers.first as? MoodLogCollectionViewController {
+           let vc = nav.viewControllers.first as? MoodLogCollectionViewController,
+           let data = sender as? (Int, UIColor) {
 
-            vc.selectedMoodColor = sender as? UIColor
+            vc.selectedMood = data.0
+            vc.selectedMoodColor = data.1
 
             vc.onDismiss = { [weak self] in
                 self?.resetMoodViews()
             }
         }
     }
+
     
     // resting back the scale of mood view
     func resetMoodViews() {

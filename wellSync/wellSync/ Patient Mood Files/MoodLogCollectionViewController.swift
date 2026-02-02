@@ -6,7 +6,8 @@ class MoodLogCollectionViewController:
 
     var selectedMoodColor: UIColor?
     var onDismiss: (() -> Void)?
-
+    var selectedMood: Int? = 2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,9 +36,12 @@ class MoodLogCollectionViewController:
     -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: "MoodLog",
+            withReuseIdentifier: "MoodEntry",
             for: indexPath
-        )
+        ) as! MoodEntryCollectionViewCell
+        
+        cell.configureTap(target: self, action: #selector(moodTapped(_:)))
+        cell.configure(selectedIndex: selectedMood ?? 2)
         cell.layer.cornerRadius = 16
         cell.layer.masksToBounds = true
         cell.layer.shadowColor = UIColor.black.cgColor
@@ -49,6 +53,19 @@ class MoodLogCollectionViewController:
         return cell
     }
 
+    @objc func moodTapped(_ sender: UITapGestureRecognizer) {
+        guard let selectedView = sender.view else { return }
+
+        // scale animation
+        UIView.animate(withDuration: 0.15,
+                       delay: 0,
+                       usingSpringWithDamping: 0.6,
+                       initialSpringVelocity: 0.8,
+                       options: []) {
+            selectedView.transform = CGAffineTransform(scaleX: 1.15, y: 1.15)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
