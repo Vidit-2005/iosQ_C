@@ -269,57 +269,6 @@
             </objects>
             <point key="canvasLocation" x="1118.320610687023" y="252.81690140845072"/>
         </scene>
-        <!--Patient Profile View Controller-->
-        <scene sceneID="rEA-5x-53k">
-            <objects>
-                <viewController id="3Gk-Dy-PrS" customClass="PatientProfileViewController" customModule="wellSync" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LaF-8V-if2">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Quq-MS-WT9">
-                                <rect key="frame" x="0.0" y="172" width="393" height="612"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XLI-ej-rv0">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9vN-oY-Lt9">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="J5h-JP-WbA">
-                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="OAJ-pE-dE0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="OAJ-pE-dE0" firstAttribute="bottom" secondItem="Quq-MS-WT9" secondAttribute="bottom" id="3GF-3w-vPl"/>
-                            <constraint firstItem="Quq-MS-WT9" firstAttribute="top" secondItem="OAJ-pE-dE0" secondAttribute="top" id="I7P-m6-d7y"/>
-                            <constraint firstItem="OAJ-pE-dE0" firstAttribute="trailing" secondItem="Quq-MS-WT9" secondAttribute="trailing" id="KhO-cK-2An"/>
-                            <constraint firstItem="Quq-MS-WT9" firstAttribute="leading" secondItem="OAJ-pE-dE0" secondAttribute="leading" id="g0x-HZ-UMk"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="jnt-0w-S0a">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="Pfo-Vv-sow">
-                            <color key="tintColor" name="AccentColor"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="PatientProfileCollectionView" destination="Quq-MS-WT9" id="r13-C8-NBJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eXH-Vn-Mrj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4304.580152671756" y="252.81690140845072"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="oEi-dX-kzG">
             <objects>
@@ -338,23 +287,74 @@
             </objects>
             <point key="canvasLocation" x="191.6030534351145" y="252.81690140845072"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="jYU-4w-nah">
+        <!--Patient Profile View Controller-->
+        <scene sceneID="myO-aR-dvh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vCH-dL-Zj8" sceneMemberID="viewController">
+                <viewController id="xkR-fZ-zva" customClass="PatientProfileViewController" customModule="wellSync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Spr-5f-2cL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y3l-GI-MK2">
+                                <rect key="frame" x="0.0" y="172" width="393" height="612"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wvW-LW-w2U">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="stY-JV-nPT">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SDv-0P-HLy">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jki-Sq-chn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jki-Sq-chn" firstAttribute="trailing" secondItem="Y3l-GI-MK2" secondAttribute="trailing" id="Ac8-5w-WgR"/>
+                            <constraint firstItem="Jki-Sq-chn" firstAttribute="bottom" secondItem="Y3l-GI-MK2" secondAttribute="bottom" id="Olk-qg-7cC"/>
+                            <constraint firstItem="Y3l-GI-MK2" firstAttribute="top" secondItem="Jki-Sq-chn" secondAttribute="top" id="fKw-fz-RIO"/>
+                            <constraint firstItem="Y3l-GI-MK2" firstAttribute="leading" secondItem="Jki-Sq-chn" secondAttribute="leading" id="fnr-Iv-PRk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eiE-Se-5Tk">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="vcu-lD-tkh">
+                            <color key="tintColor" name="AccentColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="PatientProfileCollectionView" destination="Y3l-GI-MK2" id="Ifn-zx-yGf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Xj-lE-Xuv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3187" y="253"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VPV-9G-OeY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oxn-HX-Jvz" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UTr-8G-bbY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dqf-io-2ze">
                         <rect key="frame" x="0.0" y="118" width="393" height="54"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="3Gk-Dy-PrS" kind="relationship" relationship="rootViewController" id="w9P-zy-hSD"/>
+                        <segue destination="xkR-fZ-zva" kind="relationship" relationship="rootViewController" id="PFG-96-Try"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xqq-Ng-Wdu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahv-zf-qL4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3377.8625954198474" y="252.81690140845072"/>
+            <point key="canvasLocation" x="2260" y="253"/>
         </scene>
     </scenes>
     <resources>
@@ -363,7 +363,7 @@
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
