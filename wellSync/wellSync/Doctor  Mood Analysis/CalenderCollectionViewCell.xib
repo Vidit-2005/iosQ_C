@@ -281,7 +281,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" red="0.92870205100000003" green="0.93277653829999996" blue="0.94499999999999995" alpha="0.83999999999999997" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Jto-ag-aCi" firstAttribute="leading" secondItem="V8n-zQ-Lcy" secondAttribute="leading" constant="20" id="0SL-Qd-aWq"/>
                             <constraint firstAttribute="trailing" secondItem="WNb-RW-uVz" secondAttribute="trailing" constant="4" id="8tl-Uf-r8n"/>
@@ -323,9 +323,6 @@
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2DC5A9722F3343D1000F801A /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 2DC5A9712F3343D1000F801A /* DGCharts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2DB79A442F28DD1000E9EF11 /* wellSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wellSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC5A9722F3343D1000F801A /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = wellSync;
 			packageProductDependencies = (
+				2DC5A9712F3343D1000F801A /* DGCharts */,
 			);
 			productName = wellSync;
 			productReference = 2DB79A442F28DD1000E9EF11 /* wellSync.app */;
@@ -108,6 +114,9 @@
 			);
 			mainGroup = 2DB79A3B2F28DD1000E9EF11;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2DC5A9702F3343D1000F801A /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2DB79A452F28DD1000E9EF11 /* Products */;
 			projectDirPath = "";
@@ -351,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DC5A9702F3343D1000F801A /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DC5A9712F3343D1000F801A /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DC5A9702F3343D1000F801A /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DB79A3C2F28DD1000E9EF11 /* Project object */;
 }
