@@ -27,6 +27,7 @@ class PatientProfileViewController: UIViewController {
         PatientProfileCollectionView.register(UINib(nibName: "ProfileCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ProfileCollectionViewCell")
         PatientProfileCollectionView.register(UINib(nibName: "SessionNotesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SessionNotesCollectionViewCell")
         PatientProfileCollectionView.register(UINib(nibName: "SummarizedReportCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SummarizedReportCollectionViewCell")
+        PatientProfileCollectionView.register(UINib(nibName: "MoodCollectionViewCell", bundle: nil ), forCellWithReuseIdentifier: "MoodCollectionViewCell")
     }
     
 }
@@ -51,6 +52,10 @@ extension PatientProfileViewController: UICollectionViewDelegate, UICollectionVi
             summarizedReportCell.configureCell()
             cardStyle(cell: summarizedReportCell)
             return summarizedReportCell
+        }else if indexPath.section == 3{
+            let moodCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoodCollectionViewCell", for: indexPath) as! MoodCollectionViewCell
+            cardStyle(cell: moodCell)
+            return moodCell
         }else{
             let summarizedReportCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SummarizedReportCollectionViewCell", for: indexPath) as! SummarizedReportCollectionViewCell
             summarizedReportCell.configureCell()
@@ -59,7 +64,7 @@ extension PatientProfileViewController: UICollectionViewDelegate, UICollectionVi
         }
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 4
     }
 }
 
@@ -77,10 +82,6 @@ extension PatientProfileViewController{
                switch sectionIndex {
                case 0:
                    return self.generateSectionForProfile()
-               case 1:
-                   return self.generateSectionForCells()
-               case 2:
-                   return self.generateSectionForCells()
                default:
                    return self.generateSectionForCells()
                }
