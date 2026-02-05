@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "ACf-Wq-Fxn"; */
+"ACf-Wq-Fxn.placeholder" = "Username";
+
+/* Class = "UINavigationItem"; title = "Sign In"; ObjectID = "H0G-Sr-yAW"; */
+"H0G-Sr-yAW.title" = "Sign In";
+
+/* Class = "UIButton"; configuration.title = "LogIn"; ObjectID = "aZ7-qr-7Cq"; */
+"aZ7-qr-7Cq.configuration.title" = "LogIn";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aZ7-qr-7Cq"; */
+"aZ7-qr-7Cq.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Register as a Doctor"; ObjectID = "g03-Em-KpF"; */
+"g03-Em-KpF.configuration.title" = "Register as a Doctor";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "nee-mE-hJd"; */
+"nee-mE-hJd.placeholder" = "Password";
