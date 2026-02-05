@@ -18,21 +18,20 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jvu-mA-Qmn" customClass="BarChartView" customModule="DGCharts">
-                        <rect key="frame" x="12" y="53.666666666666671" width="453" height="173.33333333333331"/>
+                        <rect key="frame" x="12" y="46.333333333333329" width="453" height="180.66666666666669"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tez-jB-QbV">
-                        <rect key="frame" x="12" y="12" width="457" height="33.666666666666664"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tez-jB-QbV">
+                        <rect key="frame" x="12.000000000000007" y="11.999999999999998" width="113.66666666666669" height="26.333333333333329"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" red="0.92870205100000003" green="0.93277653829999996" blue="0.94499999999999995" alpha="0.83999999999999997" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="tez-jB-QbV" secondAttribute="trailing" constant="8" id="HXo-ZC-MtF"/>
                 <constraint firstItem="Jvu-mA-Qmn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="L9Q-6O-nk8"/>
                 <constraint firstItem="Jvu-mA-Qmn" firstAttribute="top" secondItem="tez-jB-QbV" secondAttribute="bottom" constant="8" id="aTl-39-d0w"/>
                 <constraint firstItem="tez-jB-QbV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="bAC-4C-iSE"/>
@@ -41,7 +40,10 @@
                 <constraint firstAttribute="trailing" secondItem="Jvu-mA-Qmn" secondAttribute="trailing" constant="12" id="rsX-jK-iCc"/>
             </constraints>
             <size key="customSize" width="477" height="235"/>
-            <point key="canvasLocation" x="464.8854961832061" y="161.61971830985917"/>
+            <connections>
+                <outlet property="barChart" destination="Jvu-mA-Qmn" id="Fn0-G7-qKR"/>
+            </connections>
+            <point key="canvasLocation" x="88" y="145"/>
         </collectionViewCell>
     </objects>
     <resources>

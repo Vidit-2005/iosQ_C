@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 private let reuseIdentifier = "Cell"
 
 class MoodAnalysisCollectionViewController: UICollectionViewController {
@@ -24,6 +25,8 @@ class MoodAnalysisCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return cards.count
     }
@@ -66,8 +69,8 @@ class MoodAnalysisCollectionViewController: UICollectionViewController {
         cell.layer.masksToBounds = true
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 0.2
-        cell.layer.shadowOffset = CGSize(width: 0, height: 2)
-        cell.layer.shadowRadius = 6
+        cell.layer.shadowOffset = CGSize(width: 0, height: 4)
+        cell.layer.shadowRadius = 8
         cell.layer.masksToBounds = false
     }
 
@@ -96,9 +99,9 @@ class MoodAnalysisCollectionViewController: UICollectionViewController {
                     layoutSize: groupSize,
                     subitems: [item]
                 )
-                group.interItemSpacing = .fixed(16)
+                group.interItemSpacing = .fixed(12)
                 let section = NSCollectionLayoutSection(group: group)
-                section.interGroupSpacing = 16
+                section.interGroupSpacing = 12
                 section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16)
 
                 return section
@@ -128,10 +131,11 @@ class MoodAnalysisCollectionViewController: UICollectionViewController {
                 layoutSize: groupSize,
                 subitems: [item]
             )
-            group.interItemSpacing = .fixed(16)
+            group.interItemSpacing = .fixed(8)
             let section = NSCollectionLayoutSection(group: group)
-            section.interGroupSpacing = 16
-            section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
+            section.interGroupSpacing = 8
+            section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 0, trailing: 16)
+            
 
             return section
         }
