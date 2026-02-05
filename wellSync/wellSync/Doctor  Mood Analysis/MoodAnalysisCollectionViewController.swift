@@ -108,7 +108,7 @@ class MoodAnalysisCollectionViewController: UICollectionViewController {
             case 1:
                 height = .estimated(130) // Calendar
             case 2:
-                height = .estimated(160) // Mood Count
+                height = .estimated(250) // Mood Count
             case 3:
                 height = .estimated(240) // Chart
             default:

@@ -20,30 +20,42 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8n-zQ-Lcy">
                         <rect key="frame" x="0.0" y="0.0" width="445" height="128"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-RW-uVz">
-                                <rect key="frame" x="4" y="15.666666666666668" width="437" height="34.333333333333329"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-RW-uVz">
+                                <rect key="frame" x="12" y="19" width="421" height="20.333333333333329"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5Y-fI-HdJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="42" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="2.6666666666666679" width="29" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="AmL-GI-SRR"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="secondaryLabelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                        </buttonConfiguration>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 Feb - 15 Feb 2026" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="Ip1-n4-Dqg">
-                                        <rect key="frame" x="50" y="0.0" width="337" height="34.333333333333336"/>
+                                        <rect key="frame" x="37" y="0.0" width="347" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7h0-qM-wpc">
-                                        <rect key="frame" x="395" y="0.0" width="42" height="34.333333333333336"/>
+                                        <rect key="frame" x="392" y="2.6666666666666679" width="29" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="fuv-Qv-2W7"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="secondaryLabelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="7h0-qM-wpc" firstAttribute="width" secondItem="a5Y-fI-HdJ" secondAttribute="width" id="Qun-fZ-Rwv"/>
-                                    <constraint firstItem="Ip1-n4-Dqg" firstAttribute="width" secondItem="a5Y-fI-HdJ" secondAttribute="width" multiplier="8" id="aJn-As-TvF"/>
-                                    <constraint firstItem="Ip1-n4-Dqg" firstAttribute="width" secondItem="7h0-qM-wpc" secondAttribute="width" multiplier="8" id="zy6-U0-3iy"/>
+                                    <constraint firstItem="Ip1-n4-Dqg" firstAttribute="width" secondItem="a5Y-fI-HdJ" secondAttribute="width" multiplier="12" id="aJn-As-TvF"/>
+                                    <constraint firstItem="Ip1-n4-Dqg" firstAttribute="width" secondItem="7h0-qM-wpc" secondAttribute="width" multiplier="12" id="zy6-U0-3iy"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jto-ag-aCi">
@@ -284,11 +296,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Jto-ag-aCi" firstAttribute="leading" secondItem="V8n-zQ-Lcy" secondAttribute="leading" constant="20" id="0SL-Qd-aWq"/>
-                            <constraint firstAttribute="trailing" secondItem="WNb-RW-uVz" secondAttribute="trailing" constant="4" id="8tl-Uf-r8n"/>
+                            <constraint firstAttribute="trailing" secondItem="WNb-RW-uVz" secondAttribute="trailing" constant="12" id="8tl-Uf-r8n"/>
                             <constraint firstItem="Jto-ag-aCi" firstAttribute="centerY" secondItem="V8n-zQ-Lcy" secondAttribute="centerY" constant="16" id="CTo-GB-NlC"/>
-                            <constraint firstItem="WNb-RW-uVz" firstAttribute="centerY" secondItem="V8n-zQ-Lcy" secondAttribute="centerY" constant="-31.329999999999998" id="HRl-ia-itq"/>
+                            <constraint firstItem="WNb-RW-uVz" firstAttribute="centerY" secondItem="V8n-zQ-Lcy" secondAttribute="centerY" constant="-35" id="HRl-ia-itq"/>
                             <constraint firstAttribute="trailing" secondItem="Jto-ag-aCi" secondAttribute="trailing" constant="20" id="IUZ-gy-t8J"/>
-                            <constraint firstItem="WNb-RW-uVz" firstAttribute="leading" secondItem="V8n-zQ-Lcy" secondAttribute="leading" constant="4" id="pTL-JL-pvT"/>
+                            <constraint firstItem="WNb-RW-uVz" firstAttribute="leading" secondItem="V8n-zQ-Lcy" secondAttribute="leading" constant="12" id="pTL-JL-pvT"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
