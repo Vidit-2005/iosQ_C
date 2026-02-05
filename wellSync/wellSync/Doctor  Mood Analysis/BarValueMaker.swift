@@ -3,6 +3,8 @@ import UIKit
 
 class BarValueMarker: MarkerView {
 
+    // making graph
+    
     private let textLabel = UILabel()
     private let padding: CGFloat = 4   // ⭐ 4px padding
 
